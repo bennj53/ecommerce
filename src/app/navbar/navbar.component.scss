@@ -1,0 +1,152 @@
+.logo {
+  //max-width: 100%;
+  //height: auto;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+
+  &__img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.container {
+}
+
+.container::before {
+  content: "";
+  display: block;
+  //width: 85%;
+  height: 1px;
+  border-bottom: 1px solid black;
+  margin: 0 10vh 2vh 10vh;
+  //visibility: visible;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  font-size: 1em;
+  text-align: center;
+  margin: 0 10vh 0 10vh;
+  padding: 0;
+  box-sizing: border-box;
+
+  &__items-color1 {
+    background-color: white;
+    color: black;
+  }
+
+  &__items-color2 {
+    background-color: #70952d;
+    color: white;
+  }
+
+  &__panier {
+    width: 20px;
+    padding: 20px;
+  }
+}
+
+.navbar > button {
+  padding: 20px 10px;
+  border-style: none;
+  cursor: grab;
+  outline-color: #70952d;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+.navbar__items-img {
+  //display: inline;
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.container-banner {
+  position: relative;
+  max-width: 100%;
+  margin: 0 10vh 0 10vh;
+}
+
+.container-banner-title {
+  position: absolute;
+  top: 10vw;
+  left: 10px;
+  text-align: center;
+  max-width: 35%;
+}
+.container-banner-painting-title {
+  position: sticky;
+  top: 0;
+  //margin: 0 10vh 0 10vh;
+  text-align: center;
+  background-color: white;
+  z-index: 1;
+}
+
+.container-banner-painting {
+  max-width: 100%;
+  margin: 0 10vh 0 10vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 0 10px 0;
+
+  &__img-left {
+    position: sticky;
+    top: 30px;
+    border: 5px solid #555;
+    max-width: 90%;
+    height: auto;
+    background-color: mintcream;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    border-radius: 0%;
+  }
+
+  &__img {
+    position: sticky;
+    //top: 30px;
+    border: 5px solid #555;
+    max-width: 90%;
+    height: auto;
+    background-color: mintcream;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    border-radius: 0%;
+  }
+
+  &__scroll {
+    max-width: 100%;
+    top: 30px;
+    height: auto;
+
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.container-banner-img-left {
+  max-width: 100%;
+  margin: 0 10vh 0 10vh;
+}
+
+.container-home-drawing-content {
+  max-width: 100%;
+  //grid-template-columns: 1fr 1fr;
+  //padding: 0 0 10px 0;
+  background-color: black;
+
+  &__layout {
+    max-width: 100%;
+    display: flex;
+    margin: 0 10vh 0 10vh;
+  }
+}
